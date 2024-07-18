@@ -24,6 +24,7 @@ favorito: boolean;
 lat:number;
 long:number;
 aluguel: DetalhesAluguel[];
+Preco: number;
 
 }
 

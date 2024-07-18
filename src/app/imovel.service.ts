@@ -18,6 +18,7 @@ export class ImovelService {
         "tipo": "casa",
         "lat":-25.4042073,
         "long":-49.2652915,
+        "Preco": 200000,
         "adicional": [
             {
                 "chave":"informações",
@@ -50,6 +51,7 @@ export class ImovelService {
         "tipo": "apartamento",
         "lat":40.340573,
         "long":-8.5877803,
+        "Preco": 350000,
         "adicional": [
             {
                 "chave":"informações",
@@ -78,6 +80,7 @@ export class ImovelService {
         "tipo": "casa",
         "lat":63.3546078,
         "long":10.3659183,
+        "Preco": 500000,
         "adicional": [
             {
                 "chave":"informações",
@@ -109,6 +112,7 @@ export class ImovelService {
         "tipo": "casa",
         "lat":44.9274604,
         "long":-93.2843931,
+        "Preco": 600000,
         "adicional": [
             {
                 "chave": "Quartlos disponiveis",
@@ -142,10 +146,7 @@ export class ImovelService {
                 "chave": "Quintal",
                 "valor": "sim"
             },
-            {
-                "chave": "preço",
-                "valor": "R$600.000"
-            }
+            
         ],
         "aluguel":[
             {
@@ -172,6 +173,7 @@ export class ImovelService {
         "tipo": "casa",
         "lat":-17.7819405,
         "long":-63.1478696,
+        "Preco": 300000,
         "adicional": [
             {
                 "chave": "Quartlos disponiveis",
@@ -205,10 +207,7 @@ export class ImovelService {
                 "chave": "Quintal",
                 "valor": "Não"
             },
-            {
-                "chave": "preço",
-                "valor": "R$300.000"
-            }
+            
         ],
         "aluguel":[
             
@@ -232,6 +231,7 @@ export class ImovelService {
         "tipo": "casa",
         "lat":-9.6467952,
         "long":-35.7365195,
+        "Preco": 500000,
         "adicional": [
             {
                 "chave": "Quartlos disponiveis",
@@ -264,11 +264,8 @@ export class ImovelService {
             {
                 "chave": "Quintal",
                 "valor": "não"
-            },
-            {
-                "chave": "preço",
-                "valor": "R$850.000"
             }
+            
         ],
         "aluguel":[
             {
@@ -291,6 +288,7 @@ export class ImovelService {
         "tipo": "casa",
         "lat":-6.4368418,
         "long":-35.6403379,
+        "Preco": 500000,
         "adicional": [
             {
                 "chave": "Quartlos disponiveis",
@@ -323,11 +321,8 @@ export class ImovelService {
             {
                 "chave": "Quintal",
                 "valor": "sim"
-            },
-            {
-                "chave": "preço",
-                "valor": "R$500.000"
             }
+            
         ],
         "aluguel":[
             
@@ -347,6 +342,7 @@ export class ImovelService {
         "tipo": "casa",
         "lat": -23.5678215,
         "long": -46.5475334,
+        "Preco": 2500000,
         "adicional": [
             {
                 "chave": "Quartlos disponiveis",
@@ -379,13 +375,22 @@ export class ImovelService {
             {
                 "chave": "Quintal",
                 "valor": "sim"
-            },
-            {
-                "chave": "preço",
-                "valor": "R$2.500.000"
             }
         ],
-        "aluguel":[]
+        "aluguel":[
+            {
+                "chave":"Aluguel mensal",
+                "valor":9000.00
+            },
+            {
+                "chave":"Aluguel semestral",
+                "valor":70000.00
+            },
+            {
+                "chave":"Aluguel anual",
+                "valor":680000.00
+            },
+        ]
         },
     {
         "id": 9,
@@ -397,6 +402,7 @@ export class ImovelService {
         "tipo": "apartamento",
         "lat": -23.5023718,
         "long": -46.8507548,
+        "Preco": 45000000,
         "adicional": [
             {
                 "chave": "Quartlos disponiveis",
@@ -430,10 +436,7 @@ export class ImovelService {
                 "chave": "Quintal",
                 "valor": "não"
             },
-            {
-                "chave": "preço",
-                "valor": "R$45.000.000"
-            }
+            
         ],
         "aluguel":[
             {
@@ -460,6 +463,7 @@ export class ImovelService {
         "tipo": "casa",
         "lat":-23.4938383,
         "long":-46.8471592,
+        "Preco": 500000,
         "adicional": [
             {
                 "chave": "Quartlos disponiveis",
@@ -493,10 +497,7 @@ export class ImovelService {
                 "chave": "Quintal",
                 "valor": "sim"
             },
-            {
-                "chave": "preço",
-                "valor": "R$5.000.000"
-            }
+                 
         ],
         "aluguel":[
             {
