@@ -1,0 +1,45 @@
+<section>
+    
+        <input type="text" 
+            (keydown.enter)="listarImoveisComFiltro(texto.value)" 
+            #texto placeholder="Filtrar por cidade ou estado">
+        <button class="primary" type="button" 
+            (click)="listarImoveisComFiltro(texto.value)"
+            (keypress.enter)="listarImoveisComFiltro(texto.value)">Filtrar</button>
+        <button class="primary alinha" type="button" (click)="mostrarFavoritos()">Meus favoritos</button>
+        <button class="primary alinha" type="button" (click)="mostrarTodos(true)">Mostrar todos</button>
+        
+        <input class="alinha" type="radio" name="tipo"(click)="filtrarPorTipo('apartamento')" id="radioApto"/>
+        <label for="Apto">Apartamento</label>
+        
+        <input class="alinha" type="radio" name="tipo" (click)="filtrarPorTipo('casa')" id="radioCasa"/>
+        <label for="Casa">Casa</label>
+        <!--<select class="alinha" name="Zonas" [checked]="ZS" (click)="filtroZona()">
+            <option value="Norte">Norte</option>
+            <option value="Sul">Sul</option>
+            <option value="Leste">Leste</option>
+            <option value="Oeste">Oeste</option>
+        </select>-->
+
+    <section class="results">
+        @for (imovel of imoveisDB;track $index) {
+            
+            <section class="listing">
+            <img class="listing-photo" src="{{imovel.url_foto}}" alt="Foto">
+            <h2 class="listing-heading">{{ imovel.nome}}</h2>
+            <p class="listing-locantion margem">{{imovel.cidade}}, {{imovel.estado}}</p>
+            <a [routerLink]="['/detalhes',imovel.id]">Veja mais </a>
+            <img src="maps.png" alt="Mapa" class="favorito" (click)="abrirMapa(imovel)">
+
+            @if (imovel.favorito == false) {
+                <img class="favorito" src="desfavorito.png" 
+                alt="Coração" (click)="favoritar(imovel)">
+            } @else {
+                <img class="favorito" src="favorito.png" 
+                alt="Coração" (click)="favoritar(imovel)">
+            }
+            
+        </section>
+        }
+    </section>
+</section>
