@@ -22,5 +22,9 @@ export class ImovelAluguelComponent {
     const id = this.route.snapshot.params["id"]
     this.imovel = this.imvServise.bucarImovelPeloid(id)
   }
+  voltarDetalhes(){
+    const url = `/detalhes/${this.imovel?.id}`
+    this.rt.navigate([url])
+  }
 
 }

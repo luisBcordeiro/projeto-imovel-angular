@@ -16,6 +16,15 @@ article {
     margin-right: 100px;
   }
   
+  .Voltar{
+    width: 3%;
+    position: absolute;
+    left: 15%;
+    top: 6%;
+    
+  }
+
+
   .listing-heading {
     font-size: 48pt;
     font-weight: bold;

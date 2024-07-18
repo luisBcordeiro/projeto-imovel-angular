@@ -147,7 +147,20 @@ export class ImovelService {
                 "valor": "R$600.000"
             }
         ],
-        "aluguel":[]    
+        "aluguel":[
+            {
+                "chave":"Aluguel mensal",
+                "valor":5000.00
+            },
+            {
+                "chave":"Aluguel semestral",
+                "valor":35000.00
+            },
+            {
+                "chave":"Aluguel anual",
+                "valor":80000.00
+            },
+        ]    
     },
     {
         "id": 5,
@@ -197,7 +210,17 @@ export class ImovelService {
                 "valor": "R$300.000"
             }
         ],
-        "aluguel":[]    
+        "aluguel":[
+            
+            {
+                "chave":"Aluguel semestral",
+                "valor":35000.00
+            },
+            {
+                "chave":"Aluguel anual",
+                "valor":65000.00
+            },
+        ]    
     },
     {
         "id": 6,
@@ -247,7 +270,16 @@ export class ImovelService {
                 "valor": "R$850.000"
             }
         ],
-        "aluguel":[]    
+        "aluguel":[
+            {
+                "chave":"Aluguel mensal",
+                "valor":7000.00
+            },
+            {
+                "chave":"Aluguel anual",
+                "valor":95000.00
+            },
+        ]    
     },
     {
         "id": 7,
@@ -297,7 +329,13 @@ export class ImovelService {
                 "valor": "R$500.000"
             }
         ],
-        "aluguel":[]    
+        "aluguel":[
+            
+            {
+                "chave":"Aluguel anual",
+                "valor":95000.00
+            },
+        ]    
     },
     {
         "id": 8,
@@ -397,7 +435,20 @@ export class ImovelService {
                 "valor": "R$45.000.000"
             }
         ],
-        "aluguel":[]   
+        "aluguel":[
+            {
+                "chave":"Aluguel mensal",
+                "valor":9000.00
+            },
+            {
+                "chave":"Aluguel semestral",
+                "valor":70000.00
+            },
+            {
+                "chave":"Aluguel anual",
+                "valor":680000.00
+            },
+        ]   
      },
     {
         "id": 10,
@@ -447,7 +498,17 @@ export class ImovelService {
                 "valor": "R$5.000.000"
             }
         ],
-        "aluguel":[]    
+        "aluguel":[
+            {
+                "chave":"Aluguel mensal",
+                "valor":6000.00
+            },
+            {
+                "chave":"Aluguel semestral",
+                "valor":90000.00
+            }
+            
+        ]    
     }
 ]
  buscarTodosImoveis() :Imovel[] {
