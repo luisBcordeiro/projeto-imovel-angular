@@ -23,6 +23,21 @@ export class ImovelService {
                 "chave":"informações",
                 "valor": "não possui informações adicionais"
             },
+        ],
+        "aluguel":[
+            {
+                "chave":"Aluguel mensal",
+                "valor":5000.00
+            },
+            {
+                "chave":"Aluguel semestral",
+                "valor":35000.00
+            },
+            {
+                "chave":"Aluguel anual",
+                "valor":80000.00
+            },
+
         ]
     },
     {
@@ -40,7 +55,18 @@ export class ImovelService {
                 "chave":"informações",
                 "valor": "não possui informações adicionais"
             },
-        ]
+        ],
+        "aluguel":[
+            {
+                "chave":"Aluguel mensal",
+                "valor":2000.00
+            },
+            {
+                "chave":"Aluguel semestral",
+                "valor":7000.00
+            },
+            
+        ]    
     },
     {
         "id": 3,
@@ -56,6 +82,20 @@ export class ImovelService {
             {
                 "chave":"informações",
                 "valor": "não possui informações adicionais"
+            },
+        ],
+        "aluguel":[
+            {
+                "chave":"Aluguel mensal",
+                "valor":15000.00
+            },
+            {
+                "chave":"Aluguel semestral",
+                "valor":130000.00
+            },
+            {
+                "chave":"Aluguel anual",
+                "valor":650000.00
             },
         ]
     },
@@ -106,7 +146,8 @@ export class ImovelService {
                 "chave": "preço",
                 "valor": "R$600.000"
             }
-        ]
+        ],
+        "aluguel":[]    
     },
     {
         "id": 5,
@@ -155,7 +196,8 @@ export class ImovelService {
                 "chave": "preço",
                 "valor": "R$300.000"
             }
-        ]
+        ],
+        "aluguel":[]    
     },
     {
         "id": 6,
@@ -204,7 +246,8 @@ export class ImovelService {
                 "chave": "preço",
                 "valor": "R$850.000"
             }
-        ]
+        ],
+        "aluguel":[]    
     },
     {
         "id": 7,
@@ -253,7 +296,8 @@ export class ImovelService {
                 "chave": "preço",
                 "valor": "R$500.000"
             }
-        ]
+        ],
+        "aluguel":[]    
     },
     {
         "id": 8,
@@ -302,8 +346,9 @@ export class ImovelService {
                 "chave": "preço",
                 "valor": "R$2.500.000"
             }
-        ]
-    },
+        ],
+        "aluguel":[]
+        },
     {
         "id": 9,
         "url_foto": "9.jpg",
@@ -351,8 +396,9 @@ export class ImovelService {
                 "chave": "preço",
                 "valor": "R$45.000.000"
             }
-        ]
-    },
+        ],
+        "aluguel":[]   
+     },
     {
         "id": 10,
         "url_foto": "10.jpg",
@@ -400,7 +446,8 @@ export class ImovelService {
                 "chave": "preço",
                 "valor": "R$5.000.000"
             }
-        ]
+        ],
+        "aluguel":[]    
     }
 ]
  buscarTodosImoveis() :Imovel[] {
